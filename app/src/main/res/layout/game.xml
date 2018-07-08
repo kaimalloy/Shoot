@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/grassFieldTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="true"
+        android:contentDescription="@string/grass"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/grassfield"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/scoreCounterTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="1"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/soccerBallTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/soccerball"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/soccerGoalTopTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grassFieldTest"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/soccergoaltop" />
+
+    <ImageView
+        android:id="@+id/soccerGoalBottomTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soccerGoalTopTest"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/soccergoalbottom" />
+
+</RelativeLayout>
